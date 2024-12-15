@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta cahrset="UTF-8">
+        <meta name="viewport"content="width= device-width,intial-scale=1.0">
+        <title>Pharmacy</title>
+        <link rel="stylesheet"href="style.css">
+        <script defer src="order.js"></script>
+        <link rel="icon" href="./icon/favicon2.png" type="image/x-icon">
+    </head>
+        <nav>
+            <div class="nav-container">
+                <ul class="navbar">
+                    <img src="./icon/favicon2.png" alt="Logo">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="consulting and reservation.html">Consultation and Reservation</a></li>
+                    <li><a href="index.html">Pharmacy</a></li>
+                   
+                </ul>
+            </div>
+        </nav>
+        <header class="header-section">
+            <img src="./image/pharamcy.webp" alt="Service Image">
+            <div class="header-text">
+                <h1>Pharmacy </h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--medicine grid-->
+        <section class="med-section">
+            <h1>Order you medicines here!</h1>
+            <!--analgesics-->
+            <div>
+                <h3>Analgesics</h3>
+            </div>
+            <div class="med-Grid">
+                <div class="medicine-card">
+                    <img src="./image/paracetamol2.jpeg"alt="paracetamol">
+                    <h3>Paracetamol</h3>
+                    <p>Price: $5</p>
+                    <label>Quantity:</label>
+                    <input type="number" min="0" onchange="updateCart('paracetamol',5,this.value)">
+                </div>  
+                <div class="medicine-card">
+                    <img src="./image/aspirin.jpg"alt="aspirin">
+                    <h3>Aspirin</h3>
+                    <p>Price: $10</p>
+                    <label>Quantity:</label>
+                    <input type="number" min="0" onchange="updateCart('aspirin',10,this.value)">
+                </div>
+                <div class="medicine-card">
+                    <img src="./image/ibuprofen.jpg"alt="Ibuprofen">
+                    <h3>Ibuprofen</h3>
+                    <p>Price: $8</p>
+                    <label>Quantity:</label>
+                    <input type="number" min="0" onchange="updateCart('Ibuprofen',8,this.value)">
+                </div>
+                <div class="medicine-card">
+                    <img src="./image/Naproxen2.jpg"alt="Naproxen">
+                    <h3>Naproxen</h3>
+                    <p>Price: $7</p>
+                    <label>Quantity:</label>
+                    <input type="number" min="0" onchange="updateCart('Naproxen',7,this.value)">
+                </div>
+                <div class="medicine-card">
+                    <img src="./image/Diclofenac2.jpg"alt="Diclofenac">
+                    <h3>Diclofenac</h3>
+                    <p>Price: $12</p>
+                    <label>Quantity:</label>
+                    <input type="number" min="0" onchange="updateCart('Diclofenac',12,this.value)">
+                </div>
+                <div class="medicine-card">
+                    <img src="./image/codeine.webp"alt="Codeine">
+                    <h3>Codeine</h3>
+                    <p>Price: $7</p>
+                    <label>Quantity:</label>
+                    <input type="number" min="0" onchange="updateCart('Codeine',7,this.value)">
+                </div>
+            </div>
+            <!--antibiotics-->
+            <div>
+                <h3>Antibiotics</h3>
+            </div>
+            <div class="med-Grid">
+                <div class="medicine-card">
+                    <img src="./image/Amoxicillin.jpg"alt="Amoxicillin">
+                    <h3>Amoxicillin</h3>
+                    <p>Price: $9</p>
+                    <label>Quantity:</label>
+                    <input type="number" min="0" onchange="updateCart('Amoxicillin',9,this.value)">
+                </div> 
+                <div class="medicine-card">
+                    <img src="./image/Azithromycin2.jpg"alt="Azithromycin">
+                    <h3>Azithromycin</h3>
+                    <p>Price: $11</p>
+                    <label>Quantity:</label>
+                    <input type="number" min="0" onchange="updateCart('Azithromycin',11,this.value)">
+                </div>   
+                <div class="medicine-card">
+                    <img src="./image/Ciprofloxacinjpeg.jpeg"alt="Ciprofloxacin">
+                    <h3>Ciprofloxacin</h3>
+                    <p>Price: $14</p>
+                    <label>Quantity:</label>
+                    <input type="number" min="0" onchange="updateCart('Ciprofloxacin',14,this.value)">
+                </div>  
+                <div class="medicine-card">
+                    <img src="./image/doxycycline.jpg"alt="Doxycycline">
+                    <h3>Doxycycline</h3>
+                    <p>Price: $8</p>
+                    <label>Quantity:</label>
+                    <input type="number" min="0" onchange="updateCart('Doxycycline',8,this.value)">
+                </div>   
+                <div class="medicine-card">
+                    <img src="./image/Cephalexin2.avif"alt="Cephalexin">
+                    <h3>Cephalexin</h3>
+                    <p>Price: $9</p>
+                    <label>Quantity:</label>
+                    <input type="number" min="0" onchange="updateCart('Cephalexin',9,this.value)">
+                </div>   
+                <div class="medicine-card">
+                    <img src="./image/metronidazole.jpg"alt="Metronidazole">
+                    <h3>Metronidazole</h3>
+                    <p>Price: $13</p>
+                    <label>Quantity:</label>
+                    <input type="number" min="0" onchange="updateCart('Metronidazole',13,this.value)">
+                </div> 
+            </div> 
+            <!--Antidepressants-->
+            <div>
+                <h3>Antidepressants</h3>
+            </div>
+            <div class="med-Grid">
+                    <div class="medicine-card">
+                        <img src="./image/Fluoxetine2.webp"alt="Fluoxetine">
+                        <h3>Fluoxetine</h3>
+                        <p>Price: $6</p>
+                        <label>Quantity:</label>
+                        <input type="number" min="0" onchange="updateCart('Fluoxetine',6,this.value)">
+                    </div>
+                    <div class="medicine-card">
+                        <img src="./image/Sertraline.png"alt="Sertraline">
+                        <h3>Sertraline</h3>
+                        <p>Price: $12</p>
+                        <label>Quantity:</label>
+                        <input type="number" min="0" onchange="updateCart('Sertraline',12,this.value)">
+                    </div>
+                    <div class="medicine-card">
+                        <img src="./image/Citalopram.webp"alt="Citalopram">
+                        <h3>Citalopram</h3>
+                        <p>Price: $8</p>
+                        <label>Quantity:</label>
+                        <input type="number" min="0" onchange="updateCart('Citalopram',8,this.value)">
+                    </div>
+                    <div class="medicine-card">
+                        <img src="./image/Venlafaxine3.webp"alt="Venlafaxine">
+                        <h3>Venlafaxine</h3>
+                        <p>Price: $9</p>
+                        <label>Quantity:</label>
+                        <input type="number" min="0" onchange="updateCart('Venlafaxine',9,this.value)">
+                    </div>
+                    <div class="medicine-card">
+                        <img src="./image/amitriptyline.jpg"alt="Amitriptyline">
+                        <h3>Amitriptyline</h3>
+                        <p>Price: $3</p>
+                        <label>Quantity:</label>
+                        <input type="number" min="0" onchange="updateCart('Amitriptyline',3,this.value)">
+                    </div>
+                    <div class="medicine-card">
+                        <img src="./image/Bupropion.jpg"alt="Bupropion">
+                        <h3>Bupropion</h3>
+                        <p>Price: $19</p>
+                        <label>Quantity:</label>
+                        <input type="number" min="0" onchange="updateCart('Bupropion',19,this.value)">
+                    </div>
+                </div>
+                <!--Antihistamines-->
+                <div>
+                    <h3>Antihistamines</h3>
+                </div>
+                <div class="med-Grid">
+                        <div class="medicine-card">
+                            <img src="./image/Loratadine.jpg"alt="Loratadine">
+                            <h3>Loratadine</h3>
+                            <p>Price: $10</p>
+                            <label>Quantity:</label>
+                            <input type="number" min="0" onchange="updateCart('Loratadine',10,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Cetirizine.png"alt="Cetirizine">
+                            <h3>Cetirizine</h3>
+                            <p>Price: $13</p>
+                            <label>Quantity:</label>
+                            <input type="number" min="0" onchange="updateCart('Cetirizine',13,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Diphenhydramine.avif"alt="Diphenhydramine">
+                            <h3>Diphenhydramine</h3>
+                            <p>Price: $4</p>
+                            <label>Quantity:</label>
+                            <input type="number" min="0" onchange="updateCart('Diphenhydramine',4,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Fexofenadine.webp"alt="Fexofenadine">
+                            <h3>Fexofenadine</h3>
+                            <p>Price: $5</p>
+                            <label>Quantity:</label>
+                            <input type="number" min="0" onchange="updateCart('Fexofenadine',5,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Chlorpheniramine.jpg"alt="Chlorpheniramine">
+                            <h3>Chlorpheniramine</h3>
+                            <p>Price: $6</p>
+                            <label>Quantity:</label>
+                            <input type="number" min="0" onchange="updateCart('Chlorpheniramine',6,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Hydroxyzine.jpg"alt="Hydroxyzine">
+                            <h3>Hydroxyzine</h3>
+                            <p>Price: $8</p>
+                            <label>Quantity:</label>
+                            <input type="number" min="0" onchange="updateCart('Hydroxyzine',8,this.value)">
+                       </div>
+                    </div>
+                      <!--Antihypertensives-->
+                <div>
+                    <h3>Antihypertensives</h3>
+                </div>
+                <div class="med-Grid">
+                        <div class="medicine-card">
+                            <img src="./image/Amlodipine.jpg"alt="Amlodipine">
+                            <h3>Amlodipine</h3>
+                            <p>Price: $9</p>
+                            <label>Quantity:</label>
+                            <input type="number" min="0" onchange="updateCart('Amlodipine',9,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Lisinopril3.jpg"alt="Lisinopril">
+                            <h3>Lisinopril</h3>
+                            <p>Price: $10</p>
+                            <label>Quantity:</label>
+                            <input type="number" min="0" onchange="updateCart('Lisinopril',10,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Losartan.png"alt="Losartan">
+                            <h3>Losartan</h3>
+                            <p>Price: $11</p>
+                            <label>Quantity:</label>
+                            <input type="number" min="0" onchange="updateCart('Losartan',11,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Metoprolol.jpg"alt="Metoprolol">
+                            <h3>Metoprolol</h3>
+                            <p>Price: $13</p>
+                            <label>Quantity:</label>
+                            <input type="number" min="0" onchange="updateCart('Metoprolol',13,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Hydrochlorothiazide2.png"alt="Hydrochlorothiazide">
+                            <h3>Hydrochlorothiazide</h3>
+                            <p>Price: $12</p>
+                            <label>Quantity:</label>
+                            <input type="number" min="0" onchange="updateCart('Hydrochlorothiazide',12,this.value)">
+                        </div>
+                        <div class="medicine-card">
+                            <img src="./image/Clonidine.jpg"alt="Clonidine">
+                            <h3>Clonidine</h3>
+                            <p>Price: $5</p>
+                            <label>Quantity:</label>
+                            <input type="number" min="0" onchange="updateCart('Clonidine',5,this.value)">
+                        </div>
+                    </div>
+        </section>
+        <!--Cart section-->
+        <section class="cart-section">
+            <h2>Cart</h2>
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        
+                        
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--the cart will automatically update when the items add-->
+                </tbody>
+            </table>
+            <p id="total-price">Total:$0</p>
+            <button id="save-favorites-btn" onclick="saveFavorites()">Save as Favorite</button>
+            <button id="apply-favorites-btn" onclick="applyFavorites()">Apply Favorite</button>
+            <button id="buy-now-btn" onclick="redirectToCheckout()">Buy Now </button>
+        </section> 
+    </main>
+   
+ 
+    <section>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <img src="./icon/favicon2.png">
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Doctors</a></li>
+                        <li><a href="#">Pharmacy</a></li>
+                        <li><a href="#">Consultation and Reservations</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-col contact-sec">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><h4>Kandy Branch</h4></li>
+                        <li>+947890007543</li>
+                        <li>+943567800</li>
+                        <li>081-456000986</li>
+        
+                        <li><h4>Colombo Branch</h4></li>
+                        <li>+9478067890066</li>
+                        <li>+9456777332</li>
+                        <li>081-3566780076</li>
+        
+                        <li><h4>Nugegoda Branch</h4></li>
+                        <li>+9467880056</li>
+                        <li>+94777890003</li>
+                        <li>081-4560077892</li>
+                    </ul>
+                </div>
+        
+                <div class="footer-col social-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                            <img src="./icon/facebook_2504903.png" alt="face book">
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                            <img src="./icon/twitter_3670151.png" alt="Twitter">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                            <img src="./icon/instagram_2111463.png" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+     </section>
+    
+    
+
+</html>
